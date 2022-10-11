@@ -1,10 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Avatar from "./components/Avatar/Avatar";
+// import {homer, bart} from "./data"
+import { simpsons } from "./data";
 
 function App() {
   return (
-    <div className="App">
-     <h1>Simpson</h1>
+    <div>
+      <h1>Avatar components</h1>
+      {/* <Avatar {...homer} />
+      <Avatar {...bart} /> */}
+      {simpsons.map((simpson) => (
+        <Avatar {...simpson} />
+      ))}
     </div>
   );
 }
